@@ -22,27 +22,22 @@ Given that we are interested in the profitability of movie arcs and their linked
 
 ### Methods
 
+***Part 1: Getting familiar with the data and constructing the Story Arcs***
 **Step 1: Data scraping, pre-processing and dataset construction.** The dataframe was created form the two datasets provided by CMU Movie Summary Corpus.
 
 Dataframe: Plot Summary dataset (plots split into sentences + sentiment retieval with VaderSentiment as analyzer) merged with Movie Metadata dataset
-Pre-processing: Drop movies, which do not contain information about the revenue (NaN's in box office)
-D2.1 : Subsets by gender of speaker
-D2.2 : Subsets by age of speaker
-D2.3 : Subsets by political parties (for politician authors) of speaker
-These subsets are built later on during Step 4.
-Dataset D3 : Dataset containing quotes in which a woman is mentioned
-D3.1: Subset by gender of speaker
-Step 2: General preliminary analysis using Quotebank entire dataset Weekly percentage of quotes by author’s gender (men, women, other, unkown) from 2015 to 2020.
 
-Step 3: Generate annual word clouds based on dataset D1 with this library.
+Pre-processing: Drop movies, which do not contain information about the revenue (NaN's in box office), create 4 different genres (subgrouping the given genres)
 
-Step 4: Investigate gender, political and generational biases in MeToo coverage using NLP to answer question A). Train a SpaCy NLP model with dataset AD3 to perform sentiment analysis. Classification thanks to trained model on the whole dataset D2. Subdivision of D2 into D2.1, D2.2 and D2.3 for biases investigation. Clustering trials with unsupervised different ML algorithms applied on the sentiment analysis classification probabilities.
+**Step 2: Create and visualize movie arcs**
+**Step 3: Clustering** 
 
-Step 5: Investigate general women perception via dataset D3 in medias to answer question B). Generate word clouds. Classification of quotes : Text Blob or Vader models for positive, negative or neutral. Train SpaCy model on AD2 for misogynistic or non misogynistic. Classification thanks to trained model on D3.
+***Part 2: From the provided dataset to our sicentific questions***
+**Step 4: Classify movies into sentiments**
+**Step 5: Create ratings dataframe**
 
-Step 6: Correlate and investigate causation between MeToo general perception and women’s mediatic place to answer question C). Plot previously collected (step 5) data distributions according to time. Comparison with key turning points of MeToo. Investigation of the statistical significance of detected changes before and after MeToo.
+**Step 6: **
 
-Step 7: Github site building and Datastory redaction.
 
 Further details on the proposed data pipelines can be found in the notebook.
 
@@ -73,7 +68,7 @@ Step 1:
 Step 2:
 Step 3:
 Step 4:
-Step 5
+Step 5:
 
 By 09.12.2022: get familiar with Jekyll (to build website)
 By 16.12.2022: statisitical analysis
