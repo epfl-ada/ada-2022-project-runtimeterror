@@ -42,14 +42,14 @@ After that, we perform an pre-processing step where we visualize the distributio
 
 #### Part 2: From the provided dataset to our sicentific questions
 
-**Step 4: Classifying movies into sentiments.** To analyze the influence of emotion on the rating of the movies, we first need to classify the movies to three different classes (negative movie, neutral movie, positive movie). Every movie which has more than 50% of either positive, negative or neutral sentiments, is classified into a positive, negative or neutral movie. This has been repeated for ever genre dataframe and visualized using bar plots.
+**Step 4: Classifying movies into sentiments.** To analyze the influence of emotion on the rating of the movies, we first need to classify the movies into three different classes (negative movie, neutral movie, positive movie). Every movie which have more than 50% of either positive, negative or neutral sentiments, is classified into a positive, negative or neutral movie. This has been repeated for ever genre dataframe and visualized using bar plots.
 
 **Step 5: Creating ratings dataframe.** 
-In order to introduce the movie ratings into our analysis, we utilize the IMDB datasets as stated in the additional datasets section. The IMDB dataset contains entries of the movie if all the different languages. Thus in order to have a better estimate of the rating, we grouped the movies by their original title and calculated the rating by taking the weighted average of the different language movie ratings by the number of the votes given to that corresponding movie.
+In order to introduce the movie ratings into our analysis, we utilize the IMDB datasets as stated in the additional datasets section. The IMDB dataset may contain entries of the same movie in the different languages. Thus in order to have a better estimate of the rating, we grouped the movies by their original title and calculated the rating by taking the weighted average of the different language movie ratings by the number of the votes given to that corresponding movie.
 
 
 #### Part 3: Analysis and answering the sicentific questions (Milestone 3)
-exploratory
+
 **Step 6: Clustering algorithm** In this initial analysis, we utilize the basic TimeSeriesKmeans, yet multiple more powerful clustering algorithms exist such as Kernal K-means. With that, we will perform an in-depth analysis on the choice of clustering algorithms and find the optimal number of clusters using the Silhouette that will maximize the inter-class variance and minimize the intra-class variance.
 
 **Step 7: Provide Detailed Analysis for each research question** Now that we have all the data stored in the various dataframes discussed previously, we will run statistical analysis to quantify weather there exist a heterogeneous relation in the profitability and ratings of different movies arcs in order to answer the stationary analysis questions 1->4. We will then proceed into dividing the dataset into different time frames and visualize the most common dataframes in each time interval and analysis of their profitability and rating.
