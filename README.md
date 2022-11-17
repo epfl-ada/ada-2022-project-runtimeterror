@@ -50,41 +50,27 @@ Pre-processing: Drop movies, which do not contain information about the revenue 
 
 **Step 7: Statistical analysis for reasearch questions **
 
-**Step 8: Create data story**
+**Step 8: Create data story** get familiar with Jekyll (to build website)
+
+**Step 9: Finalize website, finalize single notebook, update readme (with details of contributions)**
 
 
 Further details on the proposed data pipelines can be found in the notebook.
 
 
-For every main genre, the most common movie arc was retrieved, by taking the average of all datapoints? And plotting them. In addition, all four genres were clustered depending on their movie arc in three clusters. How? What is 
-gak_km = KernelKMeans(n_clusters=3, kernel="gak")
-
-
-
-With that, we can find the mean and variance of the revenue for each cluster, eventually leading to the identification of story arcs of the most profitable movie plots. Finally, we can repeat the same procedure but on a list of movie plots taken from different time frames hence resulting in a time series analysis of the evolution of the most prevalent story arcs.
-
-
-
 ### Proposed timeline
-For the final milestone, you will be expected to execute your project proposal and describe your project in a data story. Data stories are a blog post or short article, with an important visual component, using data to tell a story and illustrate it effectively. You can be less formal here (although methods and math should then appear in the notebook), but more visual.
 
+Step 1 to 5: **Deadline Milestone 2 18.11.2022**
 
-Step 1:
+*02.12.2022: Deadline Homework 2*
 
-Step 2:
+Step 6: 09.12.2022
 
-Step 3:
+Step 7: 14.12.2022
 
-Step 4:
+Step 8: 16.12.2022
 
-Step 5:
-
-By 09.12.2022: get familiar with Jekyll (to build website)
-
-By 16.12.2022: statisitical analysis
-
-Deadline P3 submission: 23.12.2022 finalize website, finalize single notebook, update readme (with details of contributions)
-
+Step 9: **Deadline Milestone 3 23.12.2022 **
 
 ### Organization within team until P3
 Antoine: 
