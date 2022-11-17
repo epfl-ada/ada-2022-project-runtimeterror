@@ -34,7 +34,7 @@ In order to answer the posed researched questions, we will construct a data anal
 
 **Step 1: Data scraping, pre-processing and dataset construction.** In this preliminary step, we construct a dataframe from the plot summaries and the movie meta data. We then proceed by tokenizing the plots into sentences and run the sentiment analysis tool (Vader Sentiment Analyzer [1]) on each sentence. With that, we construct two different useful columns (1) Plot scores (2) Plot classifications, where they contain the time series values of the sentences in the plot. The former stores the list of continuous sentiment value ranging from -1 (most negative) to 1 (most positive) while the latter stores the list of discrete sentiment counterparts. 
 
-After that, we perform an pre-processing step where we visualize the distribution of the Box Office revenues of various movies and the display number of movies in the CMU Corpus that doesn't have the revenue scores. We also filter out all the plots that have less than 5 sentances. We also create 4 different dataframes containing the 4 most common genres (action, adventure, drama and comedy). Details in constructing the 4 different genres dataframe is given in the Notebook.
+After that, we perform an pre-processing step where we visualize the distribution of the Box Office revenues of various movies and the display number of movies in the CMU Corpus that doesn't have the revenue scores. We also filter out all the movies that have less than 5 sentances in their plot. In addition to that, we create 4 different dataframes containing the 4 most common genres (action, adventure, drama and comedy). Details in constructing the 4 different genres dataframe is given in the Notebook.
 
 **Step 2: Create and visualize movie arcs.** Now that we have, the different genre dataframes, we visualize a typical movie plot by performing averaging on all the elements of the time series in a way that takes into account that the sentiment time series have different lengths.
 
@@ -49,7 +49,7 @@ In order to introduce the movie ratings into our analysis, we utilize the IMDB d
 
 
 #### Part 3: Analysis and answering the sicentific questions (Milestone 3)
-
+exploratory
 **Step 6: Clustering algorithm** In this initial analysis, we utilize the basic TimeSeriesKmeans, yet multiple more powerful clustering algorithms exist such as Kernal K-means. With that, we will perform an in-depth analysis on the choice of clustering algorithms and find the optimal number of clusters using the Silhouette that will maximize the inter-class variance and minimize the intra-class variance.
 
 **Step 7: Provide Detailed Analysis for each research question** Now that we have all the data stored in the various dataframes discussed previously, we will run statistical analysis to quantify weather there exist a heterogeneous relation in the profitability and ratings of different movies arcs in order to answer the stationary analysis questions 1->4. We will then proceed into dividing the dataset into different time frames and visualize the most common dataframes in each time interval and analysis of their profitability and rating.
