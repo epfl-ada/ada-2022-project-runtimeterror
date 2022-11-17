@@ -50,7 +50,7 @@ Pre-processing: Drop movies, which do not contain information about the revenue 
 
 **Step 6: Clustering algorithm** We will perform an in-depth analysis on the choice of clustering algorithms and find the optimal number of clusters that will maximize the inter-class variance and minimize the intra-class variance.
 
-**Step 7: Statistical analysis for reasearch questions **
+**Step 7: Statistical analysis for reasearch questions**
 
 **Step 8: Create data story** get familiar with Jekyll (to build website)
 
@@ -72,9 +72,9 @@ Step 7: 14.12.2022
 
 Step 8: 16.12.2022
 
-Step 9: **Deadline Milestone 3 23.12.2022 **
+Step 9: **Deadline Milestone 3 23.12.2022**
 
-### Organization within team until P3
+### Organization within team
 Antoine: 
 
 Etienne: 
