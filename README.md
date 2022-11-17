@@ -36,7 +36,7 @@ In order to answer the posed researched questions, we will construct a data anal
 
 After that, we perform an pre-processing step where we visualize the distribution of the Box Office revenues of various movies and the display number of movies in the CMU Corpus that doesn't have the revenue scores. We also filter out all the movies that have less than 5 sentances in their plot. In addition to that, we create 4 different dataframes containing the 4 most common genres (action, adventure, drama and comedy). Details in constructing the 4 different genres dataframe is given in the Notebook.
 
-**Step 2: Create and visualize movie arcs.** Now that we have, the different genre dataframes, we visualize a typical movie plot by performing averaging on all the elements of the time series in a way that takes into account that the sentiment time series have different lengths.
+**Step 2: Create and visualize movie arcs.** Now that we have, the different genre dataframes, we visualize a typical movie plot by both (1) randomly choosing different movies in different genres (2) performing averaging on all the elements of the time series in a way that takes into account that the sentiment time series have different lengths.
 
 **Step 3: Clustering** After visualizing the various most typical movie arcs per genre, we examine the different time series clusters present in each genre. With that, we run a time series clustering algorithm by utilizing the tslearn library [2].
 
