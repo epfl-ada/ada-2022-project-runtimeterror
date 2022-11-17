@@ -30,7 +30,7 @@ We required a rating system because we are interested in the financial success o
 ### Methods
 In order to answer the posed researched questions, we will construct a data analysis pipeline. We divided the Pipeline into 3 major parts as detailed in what follows:  
 
-***Part 1: Getting familiar with the data and constructing the Story Arcs***
+#### Part 1: Getting familiar with the data and constructing the Story Arcs***
 
 **Step 1: Data scraping, pre-processing and dataset construction.** In this preliminary step, we construct a dataframe from the plot summaries and the movie meta data. We then proceed by tokenizing the plots into sentences and run the sentiment analysis tool (Vader Sentiment Analyzer [1]) on each sentence. With that, we construct two different useful columns (1) Plot scores (2) Plot classifications, where they contain the time series values of the sentences in the plot. The former stores the list of continuous sentiment value ranging from -1 (most negative) to 1 (most positive) while the latter stores the list of discrete sentiment counterparts. 
 
@@ -40,7 +40,7 @@ After that, we perform an exploratory step where we visualize the distribution o
 
 **Step 3: Clustering** After visualizing the various most typical movie arcs per genre, we examine the different time series clusters present in each genre. With that, we run a time series clustering algorithm by utilizing the tslearn library [2].
 
-***Part 2: From the provided dataset to our sicentific questions*** 
+#### Part 2: From the provided dataset to our sicentific questions*** 
 
 **Step 4: Classifying movies into sentiments.** To analyze the influence of emotion on the rating of the movies, we first need to classify the movies to three different classes (negative movie, neutral movie, positive movie). Every movie which has more than 50% of either positive, negative or neutral sentiments, is classified into a positive, negative or neutral movie. This has been repeated for ever genre dataframe and visualized using bar plots.
 
