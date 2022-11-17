@@ -7,9 +7,9 @@ will we add the data over time? (, and the evolution of the most prevalent story
 (Finally, we can repeat the same procedure but on a list of movie plots taken from different time frames hence resulting in a time series analysis of the evolution of the most prevalent story arcs)
 
 ## Research questions
-- What is the effect of the presence of emotions on the success of the movie (Do emotional movies have a higher rating IMDB) ? Does the effect differ between genres ?
+- What is the effect of the presence of emotions on the success of the movie (Do emotional movies have a higher rating IMDB)? Does the effect differ between genres?
 
-- What is the effect of the positive/negative emotions on the success of the movie (Do movies that are predominently positive (more than 70% of the lines are positive) have a higher IMDB rating? or is the opposite effect true? and do the observed effect vary per genre ?
+- What is the effect of the positive/negative emotions on the success of the movie (Do movies that are predominently positive (more than 70% of the lines are positive) have a higher IMDB rating? or is the opposite effect true? and do the observed effect vary per genre)?
 
 - What is the most profitable movie arc per genre, is their a clear winner among the various clusters?
 
@@ -54,7 +54,7 @@ Pre-processing: Drop movies, which do not contain information about the revenue 
 
 **Step 8: Create data story** get familiar with Jekyll (to build website)
 
-**Step 9: Finalize website, finalize single notebook, update readme (with details of contributions)**
+**Step 9: Finalize website, finalize notebook, update readme**
 
 
 Further details on the proposed data pipelines can be found in the notebook.
