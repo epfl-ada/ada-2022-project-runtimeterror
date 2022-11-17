@@ -9,13 +9,13 @@ The research questions that we would like to answer falls into two domains: (1) 
 
 In the Stationary Analysis, we would like to answer the following questions:
 
-- 1) What is the effect of the presence of emotions on the success of the movie, Do emotional movies have a higher IMDB rating ? Does the effect differ between genres ? Emotional movies are those in which the bulk of the narrative lines carry either good or negative sentiment and not both at the same time. Non-emotional movies, on the other hand, feature a preponderance of plot lines that are neutral in sentiment.
+- 1) What is the effect of the presence of emotions on the success of the movie? Do emotional movies have a higher IMDB rating ? Does the effect differ between genres ? Emotional movies are those in which the bulk of the narrative lines carry either positive or negative sentiment and not both at the same time. Non-emotional movies, on the other hand, feature a preponderance of plot lines that are neutral in sentiment.
 
-- 2) What is the effect of the positive/negative emotions on the success of the movie, Do movies that are predominantly positive have a higher IMDB rating? or is the opposite effect true? and does the observed effect vary per genre ?
+- 2) What is the effect of the positive/negative emotions on the success of the movie? Do movies that are predominantly positive have a higher IMDB rating? or is the opposite effect true? and does the observed effect vary per genre ?
 
-- 3) What is the most profitable movie arc per genre, is there a clear winner among the various clusters? For example, is the most profitable story arc described in abstract the most profitable, or does the most successful movie arc follow a different trend?
+- 3) What is the most profitable movie arc per genre? is there a clear winner among the various clusters? For example, is the most profitable story arc described in abstract the most profitable, or does the most successful movie arc follow a different trend?
 
-- 4) What is the highest rated movie arc per genre, is their a clear winner among the various clusters?
+- 4) What is the highest rated movie arc per genre? is their a clear winner among the various clusters?
 
 In the Time Series analysis, we would like to answer the following questions:
 
