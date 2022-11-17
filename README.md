@@ -13,7 +13,7 @@ In the Stationary Analysis, we would like to answer the following questions:
 
 - 2) What is the effect of the positive/negative emotions on the success of the movie? Do movies that are predominantly positive have a higher IMDB rating? or is the opposite effect true? and does the observed effect vary per genre ?
 
-- 3) What is the most profitable movie arc per genre? is there a clear winner among the various clusters? For example, is the most profitable story arc described in abstract the most profitable, or does the most successful movie arc follow a different trend?
+- 3) What is the most profitable movie arc per genre? is there a clear winner among the various clusters? For example, is the story arc described in abstract the most profitable, or does the most successful movie arc follow a different trend?
 
 - 4) What is the highest rated movie arc per genre? is their a clear winner among the various clusters?
 
