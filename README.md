@@ -18,11 +18,14 @@ Most plots in the movie business follow one of the well-known story arcs. Like, 
 Given that we are interested in the profitability of movie arcs and their linked consumer opinion, we needed a rating system. It needs to be based on real assessments but also from reliable sources. For this reason we added the title.basics.tsv.gz dataset and title.ratings.tsv.gz of the IMDb platform. 
 
 1. how merged etc on which id's
+
+
 2. etc 
 
 ### Methods
 
 ***Part 1: Getting familiar with the data and constructing the Story Arcs***
+
 **Step 1: Data scraping, pre-processing and dataset construction.** The dataframe was created form the two datasets provided by CMU Movie Summary Corpus.
 
 Dataframe: Plot Summary dataset (plots split into sentences + sentiment retieval with VaderSentiment as analyzer) merged with Movie Metadata dataset
@@ -30,10 +33,13 @@ Dataframe: Plot Summary dataset (plots split into sentences + sentiment retieval
 Pre-processing: Drop movies, which do not contain information about the revenue (NaN's in box office), create 4 different genres (subgrouping the given genres)
 
 **Step 2: Create and visualize movie arcs**
+
 **Step 3: Clustering** 
 
 ***Part 2: From the provided dataset to our sicentific questions***
+
 **Step 4: Classify movies into sentiments**
+
 **Step 5: Create ratings dataframe**
 
 **Step 6: **
@@ -65,20 +71,29 @@ For the final milestone, you will be expected to execute your project proposal a
 
 
 Step 1:
+
 Step 2:
+
 Step 3:
+
 Step 4:
+
 Step 5:
 
 By 09.12.2022: get familiar with Jekyll (to build website)
+
 By 16.12.2022: statisitical analysis
+
 Deadline P3 submission: 23.12.2022 finalize website, finalize single notebook, update readme (with details of contributions)
 
 
 ### Organization within team until P3
 Antoine: 
+
 Etienne: 
+
 Melanie:
+
 Yehya:
 
 
