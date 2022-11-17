@@ -54,7 +54,7 @@ In order to introduce the movie ratings into our analysis, we utilize the IMDB d
 **Step 7: Provide Detailed Anlysis for each reasearch question** Now that we have all the data stored in the various dataframes discussed previously, we will run stastical analysis to quantify weather there exist a heterogenous relation in the profitability and ratings of different movies arcs in order to answer the stationary analysis questions 1->4. We will then proceed into dividing the dataset into different timeframes and visualize the most common dataframes in each time interval and analysis of their profitability and rating.
 **Step 8: Create data story** get familiar with Jekyll (to build website)
 
-**Step 9: Finalize website, finalize single notebook, update readme (with details of contributions)**
+**Step 9: Finalize website, finalize notebook, update readme**
 
 
 Further details on the proposed data pipelines can be found in the notebook.
