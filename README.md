@@ -15,51 +15,50 @@ Most plots in the movie business follow one of the well-known story arcs. Like, 
 
 
 ## Additional datasets
-Given that we are interested in the profitability of movie arcs and their linked consumer opinion, we needed a rating system. It needs to be based on real assessments but also from reliable sources. For this reason we added the title.basics.tsv.gz dataset and title.ratings.tsv.gz of the IMDb platform. 
+Given that we are interested in the profitability of movie arcs and their linked consumer opinion, we needed a rating system. It has to be based on real assessments but also from reliable sources. For this reason we added in part 2 the title.basics.tsv.gz dataset and title.ratings.tsv.gz of the IMDb platform. 
 
-1. how merged etc on which id's
+1. From the basics dataset only the data with the type 'movie' was considered and merged with the ratings dataset over 'tconst', an alphanumeric unique identifier of the title. 
 
+2. With the newly created dataframe, we want to find the average rating. There are some movies with titles in multiple languages, which each have a rating. Therefore, we grouped it by original title and calculated the average rating by multiplying it with the number of votes and sum it.
 
-2. etc 
+3. Merging the dataframe of the average rating with each cluster, will provide us the necessary dataframes for the following analysis of our research questions.
 
 ### Methods
 
 ***Part 1: Getting familiar with the data and constructing the Story Arcs***
 
-**Step 1: Data scraping, pre-processing and dataset construction.** The dataframe was created form the two datasets provided by CMU Movie Summary Corpus.
+**Step 1 and 2: Data scraping, pre-processing and dataset construction.** The dataframe was created form the two datasets provided by CMU Movie Summary Corpus. 
 
-Dataframe: Plot Summary dataset (plots split into sentences + sentiment retieval with VaderSentiment as analyzer) merged with Movie Metadata dataset
+Dataframe: Plot Summary dataset (plots split into sentences + sentiment retieval with VaderSentiment as analyzer) merged with Movie Metadata dataset. Each line in the movie plot is evaluated by the sentiment analyzer as a continous value from -1 to 1 and classified as positive (+1), negative (-1) and neutral (0).
 
-Pre-processing: Drop movies, which do not contain information about the revenue (NaN's in box office), create 4 different genres (subgrouping the given genres)
+Pre-processing: Drop movies, which do not contain information about the revenue (NaN's in box office) and created 4 different genres (action, adventure, drama and comedy) by subgrouping the given genres.
 
-**Step 2: Create and visualize movie arcs**
+**Step 2: Create and visualize movie arcs.** Every genre is visualized with a timeline of the average sentiment score to form the story arc.
 
-**Step 3: Clustering** 
+**Step 3: Clustering** top three movie arcs
 
-***Part 2: From the provided dataset to our sicentific questions***
+***Part 2: From the provided dataset to our sicentific questions*** 
 
-**Step 4: Classify movies into sentiments**
+**Step 4: Classifying movies into sentiments.** To analyze the influence of emotion, we first need to separate the movies to each sentiment. Every movie which has more than 70% of either positive, negative or neutral sentiments, is classified inta a positive, negative or neutral movie. This has been repeted for ever genre dataframe and compared to each other.
 
-**Step 5: Create ratings dataframe**
+**Step 5: Creating ratings dataframe.** As explained above in section 'Additional datasets', for each genre, a dataframe with its average rating was created. 
 
-**Step 6: **
+
+***For Milestone 3:***
+
+**Step 6: Clustering algorithm** We will perform an in-depth analysis on the choice of clustering algorithms and find the optimal number of clusters that will maximize the inter-class variance and minimize the intra-class variance.
+
+**Step 7: Statistical analysis for reasearch questions **
+
+**Step 8: Create data story**
 
 
 Further details on the proposed data pipelines can be found in the notebook.
 
-Split into Part one and two
-Part one: mainly getting familiar with the data and constructing story arcs. For this the plot summaries have been read into as id and plot of each movie. Plot split into sentences as array. Build sentiment analyzer with vader sentiment as sentiment instensity analyzer, which gives back a continuous sentiment score. Additionally this score has been classified into positive (1), neutral (0) and negative (-1) scores. To add more information in the dataframe, the plot summaries with the sentiment scores were merged with the movie metadata dataset, which added the release date, title, box office sales, production country and genre. Because we are interested in the revenue depending on the movie genre, the new dataset has been processed by removing all movies without revenue values. (reduced dataset to a sixth of the initial)
-The next step it so split the data into their genres. all genres are sectioned in the four most common genres: adventure, action, drama and comedy. (do need to add which genres in which main genre?)
-columns = zip_longest(*list_values, fillvalue=0) what does * mean?
 
 For every main genre, the most common movie arc was retrieved, by taking the average of all datapoints? And plotting them. In addition, all four genres were clustered depending on their movie arc in three clusters. How? What is 
 gak_km = KernelKMeans(n_clusters=3, kernel="gak")
 
-
-To further analyze our data, the second part processed the data to undertake different comparisons. Here, each movie was divided into either a positive movie, negative movie or neutral movie, depending on the sentiment plot classification. The movie is classified in to a positive movie if 70% percent of the overall sentiment scores are positive scores (+1). Same approach was used for the negative movies. The rest is classified as a neutral movie.
-
-An additional data set was used, the ratings from ???, where only the data regarding movies was used (no other category). It contains the average rating, its number of votes and the title. 
-??? -> was it later merged with the other df like the movie plots etc?
 
 
 With that, we can find the mean and variance of the revenue for each cluster, eventually leading to the identification of story arcs of the most profitable movie plots. Finally, we can repeat the same procedure but on a list of movie plots taken from different time frames hence resulting in a time series analysis of the evolution of the most prevalent story arcs.
