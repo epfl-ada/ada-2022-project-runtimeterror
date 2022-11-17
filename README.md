@@ -48,7 +48,7 @@ After that, we perform an pre-processing step where we visualize the distributio
 In order to introduce the movie ratings into our analysis, we utilize the IMDB datasets as stated in the additional datasets section. The IMDB dataset contains entries of the movie if all the different languages. Thus in order to have a better estimate of the rating, we grouped the movies by their original title and calculated the rating by taking the weighted average of the different language movie ratings by the number of the votes given to that corresponding movie.
 
 
-#### Part 2: Analysis and answering the sicentific questions (Milestone 3)
+#### Part 3: Analysis and answering the sicentific questions (Milestone 3)
 
 **Step 6: Clustering algorithm** In this initial analysis, we utilize the basic TimeSeriesKmeans, yet multiple more powerful clustering algorithms exist such as Kernal K-means. With that, we will perform an in-depth analysis on the choice of clustering algorithms and find the optimal number of clusters using the Silhouette that will maximize the inter-class variance and minimize the intra-class variance.
 
