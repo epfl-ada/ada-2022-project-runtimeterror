@@ -80,9 +80,9 @@ Antoine: Step 6, 7
 
 Etienne: Step 6, 7
 
-Melanie: Step 7, 8
+Melanie: Step 7, 8, 9
 
-Yehya: Step 6, 9
+Yehya: Step 6, 8, 9
 
 
 #### References
