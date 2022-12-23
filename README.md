@@ -57,7 +57,7 @@ In order to introduce the movie ratings into our analysis, we utilize the IMDB d
 
 **Step 8: Create data story** In order to present our findings, we created a datastory using Jekyll.
 
-### Proposed timeline
+### Executed timeline
 
 Step 1 to 5: **Deadline Milestone 2 18.11.2022**
 
