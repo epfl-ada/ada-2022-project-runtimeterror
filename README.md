@@ -86,6 +86,37 @@ Step 9: **Deadline Milestone 3 23.12.2022**
 | Melanie| Step 7, 8, 9 |
 
 
+<table class="tg" style="undefined;table-layout: fixed; width: 342px">
+<colgroup>
+<col style="width: 164px">
+<col style="width: 178px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0lax">Teammate</th>
+    <th class="tg-0lax">Tasks</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Yehya </td>
+    <td class="tg-0lax">Worked on the pre-proccessing the data by executing step 1, step 2 in the method section. <br>Worked on classifying the movies into different emotional classes by executing step 4.<br>Constructed an matched study to nullify the effect of hidden confounds in the analysis by executing step 7.<br>Analyzed and ran statistical tests on the effect of emotions on the movies by executing step 7.<br> Contributed to the Datastory </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Antoine </td>
+    <td class="tg-0lax"> Worked on constructing the various story arcs present by executing step 3. <br> Worked on analyzing the clustering, plotting the silhoutte scores by executing step 6<br>Worked on running statistical tests to answer the questions 3, 4 and 5 by executing step 7<br>Worked on visualizing the various findings through bar plots and timeseries plots. </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Etienne</td>
+    <td class="tg-0lax">Worked on constructing the various story arcs present by executing step 3. <br> Worked on constructing the ratings dataframe and joining it with the CMU Dataset by executing step 5<br>Worked on running statistical tests to answer the questions 3, 4 and 5 by executing step 7<br>Worked on visualizing the various findings through bar plots and timeseries plots. </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Melanie:</td>
+    <td class="tg-0lax">Worked on analyzing the ratings and constructing the various plots present in the Datastory. <br> Worked on analyzing the findings and provide prominent explanations. <br> Worked on validating the algorithms developed by running tests. <br> Documenting the readme and other aspects of the notebook. 
+  </tr>
+</tbody>
+</table>
+
 
 
 #### References
