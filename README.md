@@ -73,7 +73,8 @@ Step 9: **Deadline Milestone 3 23.12.2022**
 
 ### Organization within team
 
-| Team Member |  Tasks
+| Team Member |  Tasks |
+| --- | --- |
 | Yehya |  * Worked on the pre-proccessing the data by executing step 1, step 2 in the method section * Worked on classifying the movies into different emotional classes by executing step 4* Constructed an matched study to nullify the effect of hidden confounds in the analysis by executing step 7 * Analyzed and ran statistical tests on the effect of emotions on the movies by executing step 7|
 
 | Antoine| * worked on constructing the various story arcs present by executing |
