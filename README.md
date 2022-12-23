@@ -51,16 +51,11 @@ In order to introduce the movie ratings into our analysis, we utilize the IMDB d
 
 #### Part 3: Analysis and answering the sicentific questions
 
-**Step 6: Clustering algorithm** In this initial analysis, we utilize Kernal K-means and we choose the number of clusters to be 3, yet their might be more/less clusters. In addition to that, we utilized the discrete class time series features instead of the continuous ones. With that, we will perform an in-depth analysis in order to find (1) The best features (discrete/continuous) that results in the most reasonable clustering (no similar clusertoids) (2) the optimal number of clusters using the Silhouette score that will maximize the inter-class variance and minimize the intra-class variance.
+**Step 6: Clustering algorithm** We used the tslearn library to cluster the emotional arcs of movies by genre using two different representations of time series data (continuous and discrete) and the Silhouette score to evaluate the quality of the clusters and choose the optimal number of clusters. With that, we performed an in-depth analysis in order to find (1) The best features (discrete/continuous) that results in the most reasonable clustering (no similar clusertoids) (2) the optimal number of clusters using the Silhouette score that will maximize the inter-class variance and minimize the intra-class variance.
 
-**Step 7: Provide detailed analysis for each research question** Now that we have all the data stored in the various dataframes discussed previously, we will run statistical analysis to quantify weather there exist a heterogeneous relation in the profitability and ratings of different movies arcs in order to answer the stationary analysis questions 1->4. We will then proceed into dividing the dataset into different time frames and visualize the most common dataframes in each time interval and analysis of their profitability and rating.
+**Step 7: Provide detailed analysis for each research question** Now that we have all the data stored in the various dataframes discussed previously, we run statistical analysis to quantify weather there exist a heterogeneous relation in the profitability and ratings of different movies arcs in order to answer the stationary analysis questions 1->4. We then proceed into dividing the dataset into different time frames and visualize the most common dataframes in each time interval and analysis of their profitability and rating.
 
-**Step 8: Create data story** Get familiar with Jekyll and build website.
-
-**Step 9: Finalize website, finalize notebook, update readme**
-
-Further details on the proposed data pipelines can be found in the notebook.
-
+**Step 8: Create data story** In order to present our findings, we created a datastory using Jekyll.
 
 ### Proposed timeline
 
@@ -77,13 +72,15 @@ Step 8: 16.12.2022
 Step 9: **Deadline Milestone 3 23.12.2022**
 
 ### Organization within team
-Antoine: Step 6, 7
 
-Etienne: Step 6, 7
+| Team Member |  Tasks
+| Yehya |  * Worked on the pre-proccessing the data by executing step 1, step 2 in the method section * Worked on classifying the movies into different emotional classes by executing step 4* Constructed an matched study to nullify the effect of hidden confounds in the analysis by executing step 7 * Analyzed and ran statistical tests on the effect of emotions on the movies by executing step 7|
 
-Melanie: Step 7, 8, 9
+| Antoine| * worked on constructing the various story arcs present by executing |
+| Etienne| Step 6, 7 |
+| Melanie| Step 7, 8, 9 |
 
-Yehya: Step 6, 8, 9
+
 
 
 #### References
