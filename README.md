@@ -1,19 +1,20 @@
 # Building and analysis of movie arcs
+## Datastory 
+Uncover the secret to creating the perfect recipe for a cinematic masterpiece! Follow the link to our datastory and discover the ingredients for success: [Datastory](https://melbrt.github.io/runtimeterror_ds/ "datastory") 
 
 ## Abstract
-The majority of plots follow one of a few well-known plot arcs in the film industry. Consider a story in which the main character begins in turmoil and ends in happiness, or in which the main character lives blissfully but encounters challenges that must be addressed before returning to his/her delight.
-In this research, we propose to investigate this phenomena in order to determine the most popular narratives, how lucrative certain storylines are, and how the most prevalent storyline evolves over time. Examples of well-known story lines include the various Disney movies (i.e., Snow White, Cinderella, Shrek...) where the movie starts with the main character living happily and as the movie progresses, the main character faces difficulties (Snow White eats the apple and faints, Cinderella misses the curfew, Shrek faces difficuly in saving Pheona ...). Accordingly, in order to asses this phenomena, we will first construct the various movie arcs from the movie plots. We propose splitting the movie plots into sentences and performing sentiment analysis on every sentence. With that, we can generate for every movie present in the CMU Movie Corpus dataset it's corresponding story arcs. Performing such analysis provides us with rich information on the various emotions present in the movies and how such emotions evolves over the course of the movie. With that given, we would like to address the below listed research questions.
+In this study, we propose to investigate the prevalence and evolution of popular plot arcs in the film industry. Examples of well-known storylines include those found in Disney movies, such as Snow White, Cinderella, and Shrek, where the main character starts off happily and faces challenges as the movie progresses and concludes with happily ever after! Through the use of sentiment analysis on the movie plots in the CMU Movie Corpus dataset, we aim to identify the most popular storylines and assess their commercial success. We will also analyze the emotional journey of the characters in these films to understand how these storylines evolve over time. Our research aims to provide valuable insights into the factors that contribute to the success of a film.
 
 ## Research questions
 The research questions that we would like to answer falls into two domains: (1) Stationary Analysis (2) Time Series Analysis.
 
 In the Stationary Analysis, we would like to answer the following questions:
 
-- 1) What is the effect of the presence of emotions on the success of the movie? Do emotional movies have a higher IMDB rating? Does the effect differ between genres? Emotional movies are those in which the bulk of the narrative lines carry either positive or negative sentiment and not both at the same time. Non-emotional movies, on the other hand, feature a preponderance of plot lines that are neutral in sentiment.
+- 1) Do emotional movies have a higher rating on IMDB? How does the presence of emotions in a film affect its success, and does this vary by genre?
 
 - 2) What is the effect of the positive/negative emotions on the success of the movie? Do movies that are predominantly positive have a higher IMDB rating? or is the opposite effect true? and does the observed effect vary per genre?
 
-- 3) What is the most profitable movie arc per genre? is there a clear winner among the various clusters? For example, is the story arc described in abstract the most profitable, or does the most successful movie arc follow a different trend?
+- 3) Which movie plot arcs are most profitable by genre? Is there a clear winner among the different clusters, or do the most successful films follow different trends?
 
 - 4) What is the highest rated movie arc per genre? is their a clear winner among the various clusters?
 
@@ -34,7 +35,7 @@ In order to answer the posed researched questions, we will construct a data anal
 
 **Step 1: Data scraping, pre-processing and dataset construction** In this preliminary step, we construct a dataframe from the plot summaries and the movie meta data. We then proceed by tokenizing the plots into sentences and run the sentiment analysis tool (Vader Sentiment Analyzer [1]) on each sentence. With that, we construct two different useful columns (1) Plot scores (2) Plot classifications, where they contain the time series values of the sentences in the plot. The former stores the list of continuous sentiment value ranging from -1 (most negative) to 1 (most positive) while the latter stores the list of discrete sentiment counterparts. 
 
-After that, we perform an pre-processing step where we visualize the distribution of the Box Office revenues of various movies and the display number of movies in the CMU Corpus that doesn't have the revenue scores. We also filter out all the movies that have less than 5 sentances in their plot. In addition to that, we create 4 different dataframes containing the 4 most common genres (action, adventure, drama and comedy). Details in constructing the 4 different genres dataframe is given in the Notebook.
+After that, we perform an pre-processing step where we visualize the distribution of the Box Office revenues of various movies and the display number of movies in the CMU Corpus that doesn't have the revenue scores. We also filter out all the movies that have less than 5 sentances in their plot. In addition to that, we create 4 different dataframes containing the 4 most common genres (action, horror, drama and comedy). Details in constructing the 4 different genres dataframe is given in the Notebook.
 
 **Step 2: Create and visualize movie arcs** Now that we have, the different genre dataframes, we visualize a typical movie plot by both (1) randomly choosing different movies in different genres (2) performing averaging on all the elements of the time series in a way that takes into account that the sentiment time series have different lengths.
 
@@ -48,7 +49,7 @@ After that, we perform an pre-processing step where we visualize the distributio
 In order to introduce the movie ratings into our analysis, we utilize the IMDB datasets as stated in the additional datasets section. The IMDB dataset may contain entries of the same movie in the different languages. Thus in order to have a better estimate of the rating, we grouped the movies by their original title and calculated the rating by taking the weighted average of the different language movie ratings by the number of the votes given to that corresponding movie.
 
 
-#### Part 3: Analysis and answering the sicentific questions (Milestone 3)
+#### Part 3: Analysis and answering the sicentific questions
 
 **Step 6: Clustering algorithm** In this initial analysis, we utilize Kernal K-means and we choose the number of clusters to be 3, yet their might be more/less clusters. In addition to that, we utilized the discrete class time series features instead of the continuous ones. With that, we will perform an in-depth analysis in order to find (1) The best features (discrete/continuous) that results in the most reasonable clustering (no similar clusertoids) (2) the optimal number of clusters using the Silhouette score that will maximize the inter-class variance and minimize the intra-class variance.
 
