@@ -10,17 +10,15 @@ The research questions that we would like to answer falls into two domains: (1) 
 
 In the Stationary Analysis, we would like to answer the following questions:
 
-- 1) Do emotional movies have a higher rating on IMDB? How does the presence of emotions in a film affect its success, and does this vary by genre?
+* What is the effect of the presence of emotions on the success of the movie, do emotional movies have a higher IMDB rating? Does the effect differ between genres?
 
-- 2) What is the effect of the positive/negative emotions on the success of the movie? Do movies that are predominantly positive have a higher IMDB rating? or is the opposite effect true? and does the observed effect vary per genre?
+* What is the effect of the positive/negative emotions on the success of the movie, do movies that are predominently positive (more than 50% of the lines are positive) have a higher IMDB rating? or is the opposite effect true? and do the observed effect vary per genre? 
 
-- 3) Which movie plot arcs are most profitable by genre? Is there a clear winner among the different clusters, or do the most successful films follow different trends?
-
-- 4) What is the highest rated movie arc per genre? is their a clear winner among the various clusters?
+* What is the most rated movie arc per genre, is there a clear winner among the various clusters?
 
 In the Time Series analysis, we would like to answer the following questions:
 
-- 1) Does the most typical movie arc change over time? If so, what are the various movie arcs that take place in various time periods, and what are their profitability and rating?
+* What is the most profitable movie arc per genre, is there a clear winner among the various clusters? Did the profitability change over time?
 
 
 ## Additional datasets
