@@ -1,4 +1,4 @@
-# Building and analysis of movie arcs
+# A Recipe for a perfect story!
 ## Datastory 
 Uncover the secret to creating the perfect recipe for a cinematic masterpiece! Follow the link to our datastory and discover the ingredients for success: [Datastory](https://melbrt.github.io/runtimeterror_ds/ "datastory") 
 
